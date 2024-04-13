@@ -1,6 +1,8 @@
 import React from "react";
 import Header from "./components/Header";
 import Booking from "./components/Booking";
+import ListHeading from "./components/ListHeading";
+import BookingDetails from "./components/BookingDetails";
 
 const App = () => {
   return (
@@ -8,6 +10,14 @@ const App = () => {
       <Header />
       <div className="p-20">
         <Booking />
+        <div className="mt-5 rounded-xl">
+          <ListHeading/>
+         <div className="bg-white rounded-b-xl">
+         <BookingDetails/>
+         <BookingDetails/>
+         <BookingDetails/>
+         </div>
+        </div>
       </div>
     </div>
   );
